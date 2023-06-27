@@ -13,7 +13,7 @@ import routes from "./routes/routes";
 
 const App = () => {
   // const [mode, setMode] = useState<PaletteMode>('light')
-  const mode: PaletteMode = "dark";
+  const mode: PaletteMode = "light";
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
   return (
     <ThemeProvider theme={theme}>
